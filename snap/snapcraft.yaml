@@ -42,14 +42,16 @@ parts:
       - qtdeclarative5-dev 
       
     stage-packages: 
-      - qmlscene
+      - build-essential 
+      - qml-module-qtgraphicaleffects 
+      - qml-module-qt-labs-folderlistmodel 
+      - qml-module-qt-labs-settings 
       - qml-module-qtquick-controls 
-      - qtdeclarative5-qtquick2-plugin 
-      - libqt5qml-graphicaleffects 
       - qml-module-qtquick-dialogs 
+      - qmlscene 
+      - qt5-default 
+      - qt5-qmake 
+      - qtdeclarative5-dev 
       - qtdeclarative5-localstorage-plugin 
+      - qtdeclarative5-qtquick2-plugin 
       - qtdeclarative5-window-plugin
-      - libgl1-mesa-dev
-      - qtdeclarative5-dev-tools
-      - qml-module-qtquick-extras
-      - qtdeclarative5-dev
