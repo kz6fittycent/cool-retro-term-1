@@ -11,8 +11,6 @@ apps:
     command: desktop-launch $SNAP/usr/bin/cool-retro-term
     desktop: usr/share/applications/cool-retro-term.desktop
     plugs:
-      - unity7
-      - x11
       - desktop
       - home
       - network
