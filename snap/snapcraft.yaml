@@ -4,7 +4,7 @@ summary: cool-retro-term is a terminal emulator. # 79 char long summary
 description: |
   First off, this is freakin' awesome. cool-retro-term is a terminal emulator which mimics the look and feel of the old cathode tube screens. It has been designed to be eye-candy, customizable, and reasonably lightweight.
 grade: stable # must be 'stable' to release into candidate/stable channels
-confinement: strict # use 'strict' once you have the right plugs
+confinement: strict # THIS SNAP NEEDS CLASSIC CONFINEMENT!!
 
 apps:
   cool-retro-term:
@@ -25,7 +25,7 @@ apps:
       - system-observe
       
 parts:
-  my-part:
+  cool-retro-term:
     source: https://github.com/kz6fittycent/cool-retro-term-1
     source-type: git
     plugin: qmake # See 'snapcraft plugins'
@@ -34,32 +34,32 @@ parts:
     
     build-packages:
       - build-essential 
-      - qml-module-qtgraphicaleffects 
-      - qml-module-qt-labs-folderlistmodel 
-      - qml-module-qt-labs-settings 
-      - qml-module-qtquick-controls 
-      - qml-module-qtquick-dialogs 
       - qmlscene 
-      - qt5-default 
       - qt5-qmake 
+      - qt5-default 
       - qtdeclarative5-dev 
-      - qtdeclarative5-localstorage-plugin 
-      - qtdeclarative5-qtquick2-plugin 
-      - qtdeclarative5-window-plugin
-      - qtquickcontrols2-5-dev
       
     stage-packages: 
-      - build-essential 
-      - qml-module-qtgraphicaleffects 
-      - qml-module-qt-labs-folderlistmodel 
-      - qml-module-qt-labs-settings 
+      - qmlscene
       - qml-module-qtquick-controls 
-      - qml-module-qtquick-dialogs 
-      - qmlscene 
-      - qt5-default 
-      - qt5-qmake 
-      - qtdeclarative5-dev 
-      - qtdeclarative5-localstorage-plugin 
       - qtdeclarative5-qtquick2-plugin 
+      - libqt5qml-graphicaleffects 
+      - qml-module-qtquick-dialogs 
+      - qtdeclarative5-localstorage-plugin 
       - qtdeclarative5-window-plugin
-      - qtquickcontrols2-5-dev
+      - libxkbcommon0 
+      - ttf-ubuntu-font-family
+      - dmz-cursor-theme
+      - light-themes
+      - adwaita-icon-theme
+      - gnome-themes-standard
+      - shared-mime-info
+      - libqt5gui5
+      - libgdk-pixbuf2.0-0
+      - libqt5svg5 # for loading icon themes which are svg
+      - appmenu-qt5
+      - locales-all
+      # - libgl1
+      # - libgl1-mesa-glx # getting errors associated with libGL
+      - libgl1-mesa-dev
+      # make things prettier, maybe...
