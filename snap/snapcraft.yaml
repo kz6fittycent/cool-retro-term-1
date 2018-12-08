@@ -46,6 +46,7 @@ parts:
       - qtdeclarative5-localstorage-plugin 
       - qtdeclarative5-qtquick2-plugin 
       - qtdeclarative5-window-plugin
+      - qtquickcontrols2-5-dev
       
     stage-packages: 
       - build-essential 
@@ -61,3 +62,4 @@ parts:
       - qtdeclarative5-localstorage-plugin 
       - qtdeclarative5-qtquick2-plugin 
       - qtdeclarative5-window-plugin
+      - qtquickcontrols2-5-dev
