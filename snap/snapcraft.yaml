@@ -26,7 +26,7 @@ apps:
       
 parts:
   cool-retro-term:
-    source: https://github.com/Swordfish90/cool-retro-term
+    source: https://github.com/kz6fittycent/cool-retro-term-1
     source-type: git
     plugin: qmake # See 'snapcraft plugins'
     qt-version: qt5
@@ -47,6 +47,22 @@ parts:
       - qml-module-qtquick-dialogs 
       - qtdeclarative5-localstorage-plugin 
       - qtdeclarative5-window-plugin
+      - libxkbcommon0 
+      - ttf-ubuntu-font-family
+      - dmz-cursor-theme
+      - light-themes
+      - adwaita-icon-theme
+      - gnome-themes-standard
+      - shared-mime-info
+      - libqt5gui5
+      - libgdk-pixbuf2.0-0
+      - libqt5svg5 # for loading icon themes which are svg
+      - appmenu-qt5
+      - locales-all
+      # - libgl1
+      # - libgl1-mesa-glx # getting errors associated with libGL
       - libgl1-mesa-dev
-      - qtdeclarative5-dev-tools
-      - qml-module-qtquick-extras
+      # make things prettier, maybe...
+      - qml-module-qt-labs-settings 
+      - qml-module-qt-labs-folderlistmodel
+      - qtdeclarative5-dev
